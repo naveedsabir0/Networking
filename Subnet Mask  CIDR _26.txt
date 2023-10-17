@@ -1,0 +1,13 @@
+For this example we will use a 
+/26 Class C network
+11111111.11111111.11111111.11000000
+
+Number of Networks
+2 ^ 2 = 4
+Number of Nodes
+(2 ^ 6) - 2
+=> 64 - 2 = 62
+------------------------------------------
+Class C Network Configuration
+For one subnet we will have PCs and VOIP phones for the office
+For 3 subnets are for Wifi for office workers
