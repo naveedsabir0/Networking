@@ -1,0 +1,98 @@
+Subnet Mask (Dotted Decimal format): 255.255.255.224
+Subnet Mask (Dotted binary format): 11111111.11111111.11111111.11100000
+CIDR /27
+
+Bits in Class C section 11100000
+Calculation of networks 
+Formula: 2 to the power of the number of 1 bits in Class C section (last octet)
+=> 2 ^ 3 = 8
+
+Formula: 2 to the power of the number of 0 bits in Class C section (last octet) minus 2 
+(1 for network ID and the other for broadcast address)
+Calculation of nodes 
+=>(2 ^ 5) - 2 
+=> 32 - 2 = 30
+-------------------------------------------------------
+<<Subnet 1>>
+Network ID 192.168.0.0 /27
+Subnet Mask: 255.255.255.224 
+Default Gateway: 192.168.0.1 (set to first available node address in this example)
+Broadcast: 192.168.0.31 (set to last available node address in subnet)
+PC0: 192.168.0.2
+PC1: 192.168.0.3
+PC2: 192.168.0.4
+-------------------------------------------------------
+<<Subnet 2>>
+Network ID 192.168.0.32 /27
+Subnet Mask: 255.255.255.224 
+Default Gateway: 192.168.0.33 (set to first available node address in this example)
+Broadcast: 192.168.0.63 (set to last available node address in subnet)
+PC3: 192.168.0.34
+PC4: 192.168.0.35
+PC5: 192.168.0.36
+-------------------------------------------------------
+<<Subnet 3>> 
+Network ID 192.168.0.64 /27
+Subnet Mask: 255.255.255.224 
+Default Gateway: 192.168.0.65 (set to first available node address in this example)
+Broadcast: 192.168.0.95 (set to last available node address in subnet)
+PC6: 192.168.0.66
+PC7: 192.168.0.67
+PC8: 192.168.0.68
+-------------------------------------------------------
+<<Subnet 4>>
+Network ID 192.168.0.96 /27
+Subnet Mask: 255.255.255.224 
+Default Gateway: 192.168.0.97 (set to first available node address in this example)
+Broadcast: 192.168.0.127 (set to last available node address in subnet)
+PC9: 192.168.0.98
+PC10: 192.168.0.99
+PC11: 192.168.0.100
+-------------------------------------------------------
+<<Subnet 5>>
+Network ID 192.168.0.128 /27
+Subnet Mask: 255.255.255.224 
+Default Gateway: 192.168.0.129 (set to first available node address in this example)
+Broadcast: 192.168.0.159 (set to last available node address in subnet)
+PC12: 192.168.0.130
+PC13: 192.168.0.131
+PC14: 192.168.0.132
+-------------------------------------------------------
+<<Subnet 6>>
+Network ID 192.168.0.160 /27
+Subnet Mask: 255.255.255.224 
+Default Gateway: 192.168.0.161 (set to first available node address in this example)
+Broadcast: 192.168.0.191 (set to last available node address in subnet)
+PC15: 192.168.0.162
+PC16: 192.168.0.163
+PC17: 192.168.0.164
+-------------------------------------------------------
+<<Subnet 7>>
+Network ID 192.168.0.192 /27
+Subnet Mask: 255.255.255.224 
+Default Gateway: 192.168.0.193 (set to first available node address in this example)
+Broadcast: 192.168.0.223 (set to last available node address in subnet)
+PC18: 192.168.0.194
+PC19: 192.168.0.195
+PC20: 192.168.0.196
+-------------------------------------------------------
+<<Subnet 8>>
+Network ID 192.168.0.224 /27
+Subnet Mask: 255.255.255.224 
+Default Gateway: 192.168.0.225 (set to first available node address in this example)
+Broadcast: 192.168.0.253 (set to last available node address in subnet)
+PC20: 192.168.0.226
+PC21: 192.168.0.227
+PC22: 192.168.0.228
+-------------------------------------------------------
+Router Interface Ports
+Subnet 1 -> 192.168.0.1
+Subnet 2 -> 192.168.0.33
+Subnet 3 -> 192.168.0.65
+Subnet 4 -> 192.168.0.97
+Subnet 5 -> 192.168.0.129
+Subnet 6 -> 192.168.0.161
+Subnet 7 -> 192.168.0.193
+Subnet 8 -> 192.168.0.225
+
+For my example, I used a 2811 switch with NM2FE2W + 6 additional WIC-1ENT
